@@ -1,4 +1,9 @@
-# Robotica_movil_Lab2
+# Fundamentos de Robotica Móvil: Laboratorio 2
+
+## Integrantes
+  - Javier Danilo Tovar Rodriguez
+  - David Felipe Ruiz Reyes
+  - Diego Andres Fernandez Sosa
 
 ## ACTIVIDAD 1
 ## Descripción:
