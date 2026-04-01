@@ -182,3 +182,7 @@ Se usa el comando personalizado **jcatkin_make** para compilar el proyecto.
 
 > **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
 > **[▶️ Ver versión local del video](.img/Ejecución_video.mp4)**
+
+## Video de ejecución en 2 computadores:
+
+[Ver video](.img/ejecucion_2_computadores.mp4)
