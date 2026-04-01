@@ -1,5 +1,56 @@
 # Robotica_movil_Lab2
 
+## ACTIVIDAD 1
+## Descripción:
+Se desea realizar la comunicación de varios nodos del paquete Turtlesim a traves de la red y dos 'End Device'.
+
+## Comandos ejecutados:
+
+Terminal 1 (ROS MASTER):
+```bash
+roscore
+```
+Terminal 2 (Tortuga VM1):
+```bash
+rosrun turtlesim turtlesim_node __name:=vm1 /turtle1/cmd_vel:=/vm1/cmd_vel
+```
+Terminal 3 (Control para Tortuga VM2 en VM1):
+```bash
+rosrun turtlesim turtle_teleop_key __name:=controlvm2 /turtle1/cmd_vel:=/vm2/cmd_vel
+```
+Terminal 4 (Tortuga VM2):
+```bash
+rosrun turtlesim turtlesim_node __name:=vm2 /turtle1/cmd_vel:=/vm2/cmd_vel
+```
+Terminal 5 (Control para Tortuga VM1 en VM2):
+```bash
+rosrun turtlesim turtle_teleop_key __name:=controlvm1 /turtle1/cmd_vel:=/vm1/cmd_vel
+```
+Terminal 6 (Verificación):
+```bash
+rqt_graph
+```
+
+## Video de ejecución:
+
+Comunicación de una primera tortuga con un primer control.
+
+[![Ejecución del bot en YouTube](https://img.youtube.com/vi/RekJCz4C1Iw/0.jpg)](https://youtu.be/RekJCz4C1Iw)
+
+> **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
+> **[▶️ Ver versión local del video](.img/Lab2_primerturtle.mp4)**
+
+
+Comunicación de dos tortugas con sus controles en máquinas virtuales distintas.
+
+[![Ejecución del bot en YouTube](https://img.youtube.com/vi/bwPI6IR05ww/0.jpg)](https://youtu.be/bwPI6IR05ww)
+
+> **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
+> **[▶️ Ver versión local del video](.img/Lab2_dosturtle.mp4)**
+
+
+## ACTIVIDAD 2
+
 ## Descripción:
 
 ### Nodo:
