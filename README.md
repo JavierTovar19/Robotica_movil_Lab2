@@ -6,7 +6,7 @@ Se desea realizar la comunicación de varios nodos del paquete Turtlesim a trave
 
 ## Comandos ejecutados:
 
-En cada terminal para ambas máquinas virtuales se ha de indicar la dirección IP de la VM y la dirección donde estará el RosMaster. Para ello se usan los siguientes comandos:
+En cada terminal para ambas máquinas virtuales se ha de indicar la dirección IP de la VM y la dirección donde estará el ROS Master. Para ello se usan los siguientes comandos:
 
 ![Direccionamiento](.img/LAB2_1.png)
 
@@ -15,7 +15,7 @@ La verificación de comunicación entre las VM se realiza con el comando 'ping' 
 ![Direccionamiento](.img/LAB2_0.png)
 
 
-A partir de establecer correctamente la ubicación de cada terminal en la red, se inicia un RosMaster con el siguiente comando:
+A partir de establecer correctamente la ubicación de cada terminal en la red, se inicia un ROS Master y la coordinación de las conexiones con el siguiente comando:
 
 Terminal 1 (ROS MASTER):
 ```bash
