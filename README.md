@@ -95,4 +95,7 @@ rosrun turtu clases.py
 
 Se usa el comando personalizado **jcatkin_make** para compilar el proyecto.
 
-<video controls src=".img/Ejecución_video.mp4" title="Title"></video>
+[![Ejecución del bot en YouTube](https://img.youtube.com/vi/PXtsvDfo-fI/0.jpg)](https://www.youtube.com/watch?v=PXtsvDfo-fI)
+
+> **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
+> **[▶️ Ver versión local del video](.img/Ejecución_video.mp4)**
