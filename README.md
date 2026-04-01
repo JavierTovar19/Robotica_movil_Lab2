@@ -1,4 +1,4 @@
-# Fundamentos de Robotica Móvil: Laboratorio 2
+# Fundamentos de Robótica Móvil: Laboratorio 2
 
 ## Integrantes
   - Javier Danilo Tovar Rodriguez
