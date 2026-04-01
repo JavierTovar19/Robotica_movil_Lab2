@@ -8,12 +8,22 @@ Se desea realizar la comunicación de varios nodos del paquete Turtlesim a trave
 
 En cada terminal para ambas máquinas virtuales se ha de indicar la dirección IP de la VM y la dirección donde estará el RosMaster. Para ello se usan los siguientes comandos:
 
+![Direccionamiento](.img/LAB2_1.png)
+
+La verificación de comunicación entre las VM se realiza con el comando 'ping' de la siguiente forma:
+
 ![Direccionamiento](.img/LAB2_0.png)
+
+
+A partir de establecer correctamente la ubicación de cada terminal en la red, se inicia un RosMaster con el siguiente comando:
 
 Terminal 1 (ROS MASTER):
 ```bash
 roscore
 ```
+
+En la primera VM se inicia su tortuga y el control para la segunda VM con los siguientes comandos:
+
 Terminal 2 (Tortuga VM1):
 ```bash
 rosrun turtlesim turtlesim_node __name:=vm1 /turtle1/cmd_vel:=/vm1/cmd_vel
@@ -22,6 +32,9 @@ Terminal 3 (Control para Tortuga VM2 en VM1):
 ```bash
 rosrun turtlesim turtle_teleop_key __name:=controlvm2 /turtle1/cmd_vel:=/vm2/cmd_vel
 ```
+
+En la segunda VM se realiza un proceso similar, en donde se identifica que cada nodo debe tener nombre único y se especifica o remapean los tópicos para que el control este dirigido correctamente.
+
 Terminal 4 (Tortuga VM2):
 ```bash
 rosrun turtlesim turtlesim_node __name:=vm2 /turtle1/cmd_vel:=/vm2/cmd_vel
@@ -30,6 +43,9 @@ Terminal 5 (Control para Tortuga VM1 en VM2):
 ```bash
 rosrun turtlesim turtle_teleop_key __name:=controlvm1 /turtle1/cmd_vel:=/vm1/cmd_vel
 ```
+
+Por último, se verifican las conexiones con el siguiente comando:
+
 Terminal 6 (Verificación):
 ```bash
 rqt_graph
@@ -44,6 +60,9 @@ Comunicación de una primera tortuga con un primer control.
 > **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
 > **[▶️ Ver versión local del video](.img/Lab2_primerturtle.mp4)**
 
+![Grafo Nodos 1.1](.img/Lab2_grapg1.png)
+
+
 
 Comunicación de dos tortugas con sus controles en máquinas virtuales distintas.
 
@@ -51,6 +70,10 @@ Comunicación de dos tortugas con sus controles en máquinas virtuales distintas
 
 > **Nota:** Si no tienes acceso a YouTube, también puedes ver el video desde el repositorio:
 > **[▶️ Ver versión local del video](.img/Lab2_dosturtle.mp4)**
+
+![Grafo Nodos 1.2](.img/Lab2_graph2.png)
+
+
 
 
 ## ACTIVIDAD 2
