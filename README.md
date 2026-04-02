@@ -184,5 +184,6 @@ Se usa el comando personalizado **jcatkin_make** para compilar el proyecto.
 > **[▶️ Ver versión local del video](.img/Ejecución_video.mp4)**
 
 ## Video de ejecución en 2 computadores:
+Para lograr esta ejecución es indispensable que se encuentren en red LAN, y se confugura el mismo MASTER_URI en ambos equipos. Luego configuramos que uno sea el publisher y el otro suscriber. A continuación está la evidencia en video del desarrollo en laboratorio.
 
 [Ver video](.img/ejecucion_2_computadores.mp4)
